@@ -4,16 +4,17 @@ cars <- mtcars
 # ------ TODO -- CREATE THE FOLLOWING 3 OBJECTS ----
 # 1. Convert the variable cyl into factor format and 
 # save it into a new variable cars_cyl 
+cars_cyl <- factor(mtcars$cyl)
 
 
 # 2. Subset the cars having 4 gears (gear) and 
 # store it in the dataframe cars_4
-
+cars_4 <- subset(mtcars, mtcars$gear == 4)
 
 
 # 3. Subset the df 'cars' to store the cars having cars with 3 gears and hp greater than 100
 # store the result as cars_3
-
+cars_3 <- subset(mtcars, mtcars$gear == 3 & mtcars$hp > 100)
 
 
 # ----- DO NOT EDIT THE CODE BELOW FOR CORRECT FEEDBACK------#

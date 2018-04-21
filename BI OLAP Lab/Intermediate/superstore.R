@@ -32,3 +32,8 @@ sliced_data=subset(merged_data,merged_data$Profit==max(merged_data$Profit));
 
 rm(cust_dimen, market_fact, orders_dimen, prod_dimen, shipping_dimen)
 
+setwd("~/DS_Lab/BI OLAP Lab/Output")
+write.table(merged_data, "merged_data.txt", row.names = F, sep = "\t")
+
+rm(merged_data)
+
